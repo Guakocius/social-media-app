@@ -1,4 +1,14 @@
-.logo {
+body {
+    background-color: white;
+    color: black;
+    padding: 0;
+}
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+#logo {
     max-width: 5%;
     max-height: 5%;
     cursor: pointer;
@@ -6,4 +16,36 @@
 }
 .navbar {
     margin-left: 10%;
+}
+#feed, #profile, #messages, #notifications, #discover{
+    text-decoration: none;
+    color: black;
+    opacity: .5;
+}
+#feed:hover, #profile:hover, #messages:hover, #notifications:hover, #discover:hover {
+    color: #30D5C8;
+}
+#settings img {
+    cursor: pointer;
+    max-width: 5%;
+    max-height: 5%;
+}
+#feed {
+    margin-right: 3%;
+}
+#profile {
+    margin-right: 3%;
+
+}
+#messages {
+    margin-right: 3%;
+}
+#notifications {
+    margin-right: 3%;
+}
+#discover {
+    margin-right: 3%;
+}
+#settings {
+    margin-left: 3%;
 }
