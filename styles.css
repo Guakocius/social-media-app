@@ -17,12 +17,14 @@ body.dark-mode {
 .navbar {
     margin-left: 10%;
 }
-#feed, #profile, #messages, #notifications, #discover{
+a {
     text-decoration: none;
     color: black;
-    opacity: .5;
 }
-#feed:hover, #profile:hover, #messages:hover, #notifications:hover, #discover:hover {
+a:not(#logo-anchor, #settings){
+    opacity: .3;
+}
+a:hover {
     color: #30D5C8;
 }
 #settings img {
@@ -49,3 +51,24 @@ body.dark-mode {
 #settings {
     margin-left: 3%;
 }
+.sidebar {
+    text-align: right;
+    float: right;
+    margin-top: 50%;
+    width: 20%;
+}
+@keyframes flashLink {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        transform: scale(1);
+    }
+}
+a:not(#logo-anchor, #settings):clicked
