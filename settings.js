@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     function applyTheme(darkMode) {
-        document.body.classList.toggle("dark-mode", darkMode)
+        document.body.classList.toggle("dark-mode", darkMode
+        )
     }
 })
