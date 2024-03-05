@@ -1,13 +1,14 @@
-body {
-    background-color: white;
-    color: black;
-    padding: 0;
-}
-body.dark-mode {
-    background-color: #333;
-    color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+    background: linear-gradient(to right, #5c258d, #4389a2);
+    color: lightgray;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+input[type="text"]::placeholder{
+    font-family: "Poppins", sans-serif;
+}
 #logo {
     max-width: 5%;
     max-height: 5%;
@@ -19,7 +20,7 @@ body.dark-mode {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 a:not(#logo-anchor, #settings){
     opacity: .3;
@@ -62,4 +63,43 @@ a:hover {
 }
 #register {
     margin-left: 3%;
+}
+#settingsForm{
+    margin: 0 auto;
+    box-shadow: 2px 5px 20px rgba(30, 40, 100, .5);
+    max-width: 40%;
+    padding: 0;
+}
+#personal_info{
+    margin-bottom: 5%;
+    text-decoration: underline;
+}
+input#name, input#birthday, input#gender, input#pronouns, input#email, input#password{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.submit {
+    border-radius: 20px;
+    box-shadow: black;
+    border: 2px solid black;
+    color: lightgray;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    cursor: pointer;
+    margin-top: 3%;
+}
+button:hover {
+    background: linear-gradient(to left, #134E5E, #71b280);
+}
+.nav {
+    background: #8ba42b;
+    color: black;
+    width: 10%;
+    height: 5%;
+}
+button {
+    font-family: "Poppins", sans-serif;
 }
